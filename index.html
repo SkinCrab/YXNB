@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YXNB Encode</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="yxnb.css">
+  </head>
+  <body>
+	<div style="height:90%">
+		<div class="ui-editor">
+		<textarea class="ui-field rcnb" id="editor" spellcheck="false" contenteditable="true">万物皆可YXNB</textarea>
+		<div class="ui-resizer"></div>
+		</div>
+		<div class="ui-aside">
+		<div class="ui-editor" style="width:100%">
+			<textarea class="ui-field rcnb" id="result" spellcheck="false" contenteditable="true"></textarea>
+		</div>
+		</div>
+	</div>
+	<div style="height:100%;width:100%">
+		<center>
+			Powered by <a href="https://skina.cn">SkinCrab</a><br> Based on <a href="https://github.com/rcnbapp">RCNBAPP</a>
+		</center>
+	</div>
+  <script>
+  if (!window.TextEncoder) {
+	alert('Your browser seems outdated. Try latest Chrome, Firefox or Safari.')
+  }
+  </script>
+  <script src="yxnb.js" type="text/javascript"></script>
+  <script src="editor.js" type="text/javascript"></script>
+  </body>
+</html>
